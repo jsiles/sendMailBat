@@ -2,6 +2,7 @@
   require_once "c:/subasta/bat/phpmailer/class.phpmailer.php";
   require_once "c:/subasta/bat/mail.cfg";
   require_once "c:/subasta/bat/admin.php";
+  define("PATH_ROOT", "c:/subasta/scle/");
   set_time_limit(600);
   
   $sSQL="select * from mdl_notificacion_envio where noe_status=0 and noe_retry<=2 and noe_email!=''";
