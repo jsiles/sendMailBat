@@ -23,6 +23,7 @@
 	  $mail->Timeout=TIMEOUT;
 	  $mail->SMTPSecure = SMTPSECURE;
 	  $mail->Port=PORT;
+	  $mail->IsHTML(true);
 
 	  $mail->SetLanguage("es", '../phpmailer/language/');
 
